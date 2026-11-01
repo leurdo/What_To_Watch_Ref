@@ -5,8 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from settings import Config
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = Config.SQLALCHEMY_DATABASE_URI
-app.config['SECRET_KEY'] = Config.SECRET_KEY
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+app.config['SECRET_KEY'] = 'SECRET KEY'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
