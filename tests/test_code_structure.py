@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import pytest
-from sqlalchemy import Integer, String, Text, DateTime
+from sqlalchemy import DateTime, Integer, String, Text
 
 
 @pytest.mark.parametrize(
